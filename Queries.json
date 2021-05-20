@@ -1,0 +1,5 @@
+{
+  "Queries": {
+    "users": "CREATE TABLE users (user_id int PRIMARY KEY AUTO_INCREMENT, user_name varchar(20) NOT Null , user_email varchar(30) UNIQUE NOT NUll, user_password varchar(32) NOT Null, user_role SMALLINT NOT Null DEFAULT 0)"
+  }
+}
