@@ -19,7 +19,7 @@
             {
             ?>
               <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="./logout.php">Logout</a>
+                <a class="nav-link btn font-weight-bold back text-white px-3" href="./logout.php">Logout</a>
               </li>
             <?php
             }
