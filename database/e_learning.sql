@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2021 at 06:59 PM
+-- Generation Time: May 24, 2021 at 08:41 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -38,7 +38,8 @@ CREATE TABLE `course_category` (
 --
 
 INSERT INTO `course_category` (`course_id`, `course_name`, `course_description`) VALUES
-(1, 'PYTHON', 'Video series on python');
+(1, 'PYTHON', 'Video series on python'),
+(2, 'REACT', 'For react courses');
 
 -- --------------------------------------------------------
 
@@ -61,7 +62,30 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `user_name`, `user_email`, `user_password`, `user_role`) VALUES
 (1, 'Shubham Kumar', 'shubham@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 1),
 (2, 'Neha Joshi', 'neha@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 0),
-(3, 'Arush Mathew', 'arush@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 0);
+(3, 'Arush Mathew', 'arush@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 0),
+(4, 'Kanchan Rajput', 'kanchanrajput11097@gmail.com', '45dc094d13e6e0ee7f8d0e794a318eea', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `videos`
+--
+
+CREATE TABLE `videos` (
+  `video_id` int(11) NOT NULL,
+  `video_title` varchar(50) NOT NULL,
+  `video_link` varchar(50) NOT NULL,
+  `video_description` varchar(300) DEFAULT NULL,
+  `video_category` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `videos`
+--
+
+INSERT INTO `videos` (`video_id`, `video_title`, `video_link`, `video_description`, `video_category`) VALUES
+(1, 'Complete python course for beg', 'https://youtu.be/_uQrJ0TkZlc', 'Complete python course for beginners. A 5hr tutorial.', 1),
+(2, 'Basic React Course', 'https://youtu.be/Ke90Tje7VS0', 'Basic react course for beginners.', 2);
 
 --
 -- Indexes for dumped tables
@@ -81,6 +105,12 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `user_email` (`user_email`);
 
 --
+-- Indexes for table `videos`
+--
+ALTER TABLE `videos`
+  ADD PRIMARY KEY (`video_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -88,13 +118,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `course_category`
 --
 ALTER TABLE `course_category`
-  MODIFY `course_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `course_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `videos`
+--
+ALTER TABLE `videos`
+  MODIFY `video_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
