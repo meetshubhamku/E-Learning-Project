@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light pl-5 pr-5 font-weight-bold">
       <a class="navbar-brand" href="./index.php">E-Learning</a>
       <button
         class="navbar-toggler"

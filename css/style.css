@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 .back {
-  background-color: #328f8a;
-  background-image: linear-gradient(45deg, #328f8a, #08ac4b);
+  /* background-color: #00b4db; */
+  background-color: #0a52dd;
+  /* background-image: linear-gradient(45deg, #328f8a, #08ac4b); */
+  /* background-image: linear-gradient(45deg, #00b4db, #0083b0); */
+  background-image: linear-gradient(45deg, #0a52dd, #0083b0);
+
   font-family: "Roboto", sans-serif;
 }
 
