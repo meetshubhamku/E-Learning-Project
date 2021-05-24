@@ -14,7 +14,7 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=1)
   <?php include "./navbar.php" ?>
 
   <div class="container py-5 ">
-    <h2 class="text-center">Video Course Category</h2>
+    <h2 class="text-center">Course Categories</h2>
     <div class="row">
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
@@ -25,7 +25,7 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=1)
       <div class="col-8">
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-            <form method="POST" action="./addCourseCategory.php">
+            <form class="px-3" method="POST" action="./addCourseCategory.php">
               <div class="form-group">
                 <label for="exampleInputName1">Name</label>
                 <input type="text" name="categoryName" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" required>
