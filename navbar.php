@@ -15,6 +15,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <?php 
+
+            if(isset($_SESSION['uemail']) && $_SESSION['urole']==1)
+            {
+            ?>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold mx-2" href="./adminDashboard.php"> <?php echo $_SESSION['uname'] ?>'s  Dashboard</a>
+              </li>
+            <?php
+            }
+            else if(isset($_SESSION['uemail']) && $_SESSION['urole']==0)
+            {
+              ?>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold mx-2" href="./userDashboard.php"> <?php echo $_SESSION['uname'] ?>'s Dashboard</a>
+              </li>
+            <?php
+            }
+
+
             if(isset($_SESSION['uemail']))
             {
             ?>
@@ -31,6 +50,8 @@
               </li>
             <?php
             }
+
+            
           ?>
           
         </ul>

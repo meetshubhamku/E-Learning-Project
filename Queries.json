@@ -1,5 +1,6 @@
 {
   "Queries": {
-    "users": "CREATE TABLE users (user_id int PRIMARY KEY AUTO_INCREMENT, user_name varchar(20) NOT Null , user_email varchar(30) UNIQUE NOT NUll, user_password varchar(32) NOT Null, user_role SMALLINT NOT Null DEFAULT 0)"
+    "users": "CREATE TABLE users (user_id int PRIMARY KEY AUTO_INCREMENT, user_name varchar(20) NOT Null , user_email varchar(30) UNIQUE NOT NUll, user_password varchar(32) NOT Null, user_role SMALLINT NOT Null DEFAULT 0)",
+    "course_category": "create table course_category(course_id int primary key AUTO_INCREMENT, course_name varchar(30) not null, course_description varchar(300))"
   }
 }

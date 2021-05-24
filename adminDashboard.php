@@ -22,10 +22,10 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=1)
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">
-            <i class="pr-2"><img src="https://img.icons8.com/material-sharp/24/000000/video.png"/></i>
-            Video Courses</h5>
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/sorting-answers.png"/></i>
+            Course Categories</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="#" class="btn btn-primary back">Manage</a>
+            <a href="./manageCourseCategory.php" class="btn btn-primary back">Manage</a>
           </div>
         </div>
       </div>
