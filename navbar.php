@@ -14,21 +14,38 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
+        
           <?php 
 
             if(isset($_SESSION['uemail']) && $_SESSION['urole']==1)
             {
             ?>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold mx-2" href="./adminDashboard.php"> <?php echo $_SESSION['uname'] ?>'s  Dashboard</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <?php echo $_SESSION['uname'] ?>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./adminDashboard.php">Dashboard</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger font-weight-bold"  href="./logout.php">Logout</a>
+                </div>
               </li>
             <?php
             }
             else if(isset($_SESSION['uemail']) && $_SESSION['urole']==0)
             {
               ?>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold mx-2" href="./userDashboard.php"> <?php echo $_SESSION['uname'] ?>'s Dashboard</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <?php echo $_SESSION['uname'] ?>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./userDashboard.php">Dashboard</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger font-weight-bold" href="./logout.php">Logout</a>
+                </div>
               </li>
             <?php
             }
