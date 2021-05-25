@@ -39,7 +39,7 @@ else
                   <p class="card-text"><?php echo $row['course_description']; ?></p>
                   <form action="./viewVideo.php" method="POST">
                     <input type="hidden" name="courseId" value="<?php echo $row['course_id']; ?>" />
-                    <button href="./viewVideoCourses.php" class="btn btn-primary back">Learn</button>
+                    <button href="./viewVideoCourses.php" class="btn btn-primary back">Start</button>
                   </form>
                 </div>
               </div>
