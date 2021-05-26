@@ -26,7 +26,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="./adminDashboard.php">Dashboard</a>
-                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="./manageProfile.php">Profile</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item text-danger font-weight-bold"  href="./logout.php">Logout</a>
                 </div>
@@ -42,7 +42,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="./userDashboard.php">Dashboard</a>
-                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="./manageProfile.php">Profile</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item text-danger font-weight-bold" href="./logout.php">Logout</a>
                 </div>
