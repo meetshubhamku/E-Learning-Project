@@ -18,8 +18,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include "./head.php"; ?>
-<body>
+<body onload="hideLoader();">
+
+  <!-- Loader -->
+  <?php include "./loader.php"; ?>
+
+
   <?php include "./navbar.php"; ?>
+  
   <?php
   if ($result->num_rows > 0) 
     {

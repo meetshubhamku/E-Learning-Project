@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php include "./head.php"; ?>
-  <body class="back">
+  <body class="back" onload="hideLoader();">
+
+    <!-- Loader -->
+    <?php include "./loader.php"; ?>
+
+    <!-- navbar -->
     <?php include "./navbar.php"; ?>
+
+
     <div class="container pb-5">
       <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-10 mx-auto mt-5 form-box">

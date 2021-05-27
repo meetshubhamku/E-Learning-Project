@@ -16,7 +16,12 @@ else
 <!DOCTYPE html>
 <html lang="en">
   <?php include "./head.php" ?>
-<body>
+<body onload="hideLoader();">
+
+  <!-- Loader -->
+  <?php include "./loader.php"; ?>
+
+  <!-- navbar -->
   <?php include "./navbar.php" ?>
 
   <div class="container py-5 ">

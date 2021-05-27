@@ -4,7 +4,10 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
   <?php include "./head.php" ?>
-  <body class="back">
+  <body class="back" onload="hideLoader();">
+    <!-- Loader -->
+    <?php include "./loader.php"; ?>
+
     <!-- Navbar -->
     <?php include "./navbar.php" ?>
     <!-- Navbar End -->
@@ -13,11 +16,13 @@ session_start();
     <div class="container my-5 ">
       <div class="row">
         <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-white d-flex flex-column justify-content-center">
-          <h6 style="font-size: 2rem;">Online Learning</h6>
-          <h1 style="font-size: 4rem;" class="mb-4">Learn <strong class="text-dark">Everyday</strong></h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consectetur? Perspiciatis delectus, facilis quidem doloribus culpa explicabo repellendus, quaerat ullam quod provident suscipit necessitatibus nihil voluptas doloremque mollitia dolorum quas.</p>
           <div>
-            <a class="btn btn-dark py-2 pl-5 pr-5 font-weight-bold" href="./registration.php">Get Started</a>
+            <h6 style="font-size: 2rem;">Online Learning</h6>
+            <h1 style="font-size: 4rem;" class="mb-4">Learn <strong class="text-dark">Everyday</strong></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consectetur? Perspiciatis delectus, facilis quidem doloribus culpa explicabo repellendus, quaerat ullam quod provident suscipit necessitatibus nihil voluptas doloremque mollitia dolorum quas.</p>
+            <div>
+              <a class="btn btn-dark py-2 pl-5 pr-5 font-weight-bold" href="./registration.php">Get Started</a>
+            </div>
           </div>
         </div>
         <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-white">

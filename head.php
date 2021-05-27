@@ -21,5 +21,12 @@
     ></script>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/app.js"></script>
+    <script>
+      function hideLoader()
+      {
+        var element = document.getElementById('myLoader');
+        element.style.display="none";
+      }
+    </script>
     <title>E-Learning</title>
   </head>

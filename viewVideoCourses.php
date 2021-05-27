@@ -16,7 +16,12 @@ else
 <!DOCTYPE html>
 <html lang="en">
 <?php include "./head.php"; ?>
-<body class=" back">
+<body class=" back" onload="hideLoader();">
+
+ <!-- Loader -->
+ <?php include "./loader.php"; ?>
+
+ <!-- navbar -->
 <?php include "./navbar.php"; ?>
 <div class="container my-5">
     <h1 class="text-center font-weight-bold text-light">Video Courses</h1>

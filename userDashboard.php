@@ -10,8 +10,11 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=0)
 <!DOCTYPE html>
 <html lang="en">
 <?php include "./head.php"; ?>
-<body class="back">
+<body class="back" onload="hideLoader();">
 
+   <!-- Loader -->
+   <?php include "./loader.php"; ?>
+   
   <!-- Navbar Section -->
   <?php include "./navbar.php"; ?>
 

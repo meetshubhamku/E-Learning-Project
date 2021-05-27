@@ -31,7 +31,7 @@ $(document).ready(function () {
           }
         },
         error: function () {
-          alert("Something went wrong.. <br>" + "Try again!");
+          alert("Something went wrong..." + "Try again!");
         },
       });
     }

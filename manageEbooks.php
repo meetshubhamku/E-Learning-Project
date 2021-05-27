@@ -10,8 +10,14 @@ if(!isset($_SESSION['urole']))
 <!DOCTYPE html>
 <html lang="en">
 <?php include "./head.php"; ?>
-<body>
+<body onload="hideLoader();">
+
+  <!-- Loader -->
+  <?php include "./loader.php"; ?>
+
+  <!-- navbar -->
 <?php include "./navbar.php"; ?>
+
 <div class="container my-3">
   <div id="title" class="center">
     <h2 id="header" class="text-center my-3">E-Book Search</h2>
