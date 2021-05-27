@@ -48,6 +48,17 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=0)
           </div>
         </div>
       </div>
+      <div class="col-sm-4 my-2">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/php.png"/></i>
+            PHP Playground</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
+            <a href="./phpPlayground.php" target="_blank" class="btn btn-primary back">Learn</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   
