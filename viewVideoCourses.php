@@ -8,7 +8,7 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=0)
 else
 {
   include "./db.php";
-  $sql = "select * from course_category";
+  $sql = "select * from course_category order by course_name";
   $result = $conn->query($sql);
 }
 ?>

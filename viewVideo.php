@@ -31,7 +31,7 @@
     {
       ?>
       <div class="container">
-        <h2 class="text-center my-4">Available videos</h2>
+        <h2 class="text-center my-4">Available Videos</h2>
         <div class="row">
         <?php
         while($row = $result->fetch_assoc()) 
