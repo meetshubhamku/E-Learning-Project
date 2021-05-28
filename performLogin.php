@@ -18,6 +18,7 @@ if(isset($_POST['login']))
     $_SESSION["uname"]=$row['user_name'];
     $_SESSION["uemail"]=$row['user_email'];
     $_SESSION["urole"]=$row['user_role'];
+    $_SESSION["ublock"]=$row['is_block'];
     if($_SESSION["urole"]==1)
     {
       echo "<script>window.location.replace('./adminDashboard.php');</script>";

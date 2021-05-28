@@ -5,6 +5,10 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=0)
   echo "<script>alert('Invalid request. Please Login')</script>";
   echo "<script>window.location.replace('./login.php');</script>";
 }
+else if($_SESSION['ublock']!=0)
+{
+  echo "<script>window.location.replace('./blockError.php');</script>";
+}
 else
 {
   include "./db.php";

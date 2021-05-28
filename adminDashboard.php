@@ -47,7 +47,7 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=1)
           </div>
         </div>
       </div>
-      <!-- Private Course -->
+      <!-- PHP playground -->
       <div class="col-sm-4 my-2">
         <div class="card">
           <div class="card-body">
@@ -63,15 +63,15 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=1)
 
     <!-- Card Section 2 -->
     <div class="row">
-      <!-- Audio Course -->
+      <!-- User management -->
       <div class="col-sm-4 my-2">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">
-            <i class="pr-2"><img src="https://img.icons8.com/fluent-systems-filled/24/000000/high-volume.png"/></i>
-            Audio Courses</h5>
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/gender-neutral-user--v1.png"/></i>
+            User Management</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="#" class="btn btn-primary back">Manage</a>
+            <a href="./manageUser.php" class="btn btn-primary back">Manage</a>
           </div>
         </div>
       </div>
