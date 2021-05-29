@@ -67,7 +67,7 @@ session_start();
                 <div class="card text-center" style="border: none;">
                   
                   <div class="card-img-top rounded-circle align-self-center d-flex justify-content-center align-items-center" 
-                    style="height: 170px; width:170px; background-color: #0a52dd;">
+                    style="height: 170px; width:170px; background-color: #328f8a;">
                     <h1>
                       <img src="https://img.icons8.com/material/70/ffffff/here.png"/>
                     </h1>
@@ -83,7 +83,7 @@ session_start();
                 <div class="card text-center" style="border: none;">
                   <!-- <img src="./assets/home.png" class="card-img-top rounded-circle" alt="..."> -->
                   <div class="card-img-top rounded-circle align-self-center d-flex justify-content-center align-items-center" 
-                    style="height: 170px; width:170px; background-color: #0a52dd;">
+                    style="height: 170px; width:170px; background-color: #328f8a;">
                     <h1>
                       <img src="https://img.icons8.com/material/70/ffffff/infinity--v1.png"/>
                     </h1>
@@ -99,7 +99,7 @@ session_start();
                 <div class="card text-center" style="border: none;">
                   <!-- <img src="./assets/home.png" class="card-img-top rounded-circle" alt="..."> -->
                   <div class="card-img-top rounded-circle align-self-center d-flex justify-content-center align-items-center" 
-                    style="height: 170px; width:170px; background-color: #0a52dd;">
+                    style="height: 170px; width:170px; background-color: #328f8a;">
                     <h1>
                       <img src="https://img.icons8.com/material/70/ffffff/personal-growth.png"/>
                     </h1>

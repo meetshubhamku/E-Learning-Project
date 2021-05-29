@@ -75,15 +75,15 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=1)
           </div>
         </div>
       </div>
-      <!-- Online Tutorials -->
+      <!-- Notes Tutorials -->
       <div class="col-sm-4 my-2">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">
-            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/online-shop-2.png"/></i>
-            Online Courses</h5>
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/task.png"/></i>
+            Notes Management</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="#" class="btn btn-primary back">Manage</a>
+            <a href="./manageNotes.php" class="btn btn-primary back">Manage</a>
           </div>
         </div>
       </div>

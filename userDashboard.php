@@ -28,7 +28,7 @@ else if($_SESSION['ublock']!=0)
 
     <!-- Card Section 1 -->
     <div class="row">
-      <!--Course Category -->
+      <!--Video courses -->
       <div class="col-sm-4 my-2">
         <div class="card">
           <div class="card-body">
@@ -52,6 +52,7 @@ else if($_SESSION['ublock']!=0)
           </div>
         </div>
       </div>
+      <!-- PHP Playground -->
       <div class="col-sm-4 my-2">
         <div class="card">
           <div class="card-body">
@@ -60,6 +61,18 @@ else if($_SESSION['ublock']!=0)
             PHP Playground</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
             <a href="./phpPlayground.php" target="_blank" class="btn btn-primary back">Learn</a>
+          </div>
+        </div>
+      </div>
+      <!--Notes category -->
+      <div class="col-sm-4 my-2">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/task.png"/></i>
+            Course Notes</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
+            <a href="./viewCourseNotes.php" class="btn btn-primary back">Learn</a>
           </div>
         </div>
       </div>

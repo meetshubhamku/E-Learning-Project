@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5 pr-5 font-weight-bold">
-      <a class="navbar-brand" href="./index.php">E-Learning</a>
+      <a class="navbar-brand" href="./index.php" style="font-family: Gabriola; font-size:2.2rem;">
+        <i class="mr-2"><img src="https://img.icons8.com/material/50/000000/machine-learning.png"/></i>
+        LearnCog
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -22,7 +25,10 @@
             ?>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <?php echo $_SESSION['uname'] ?>
+                  <!-- <?php echo $_SESSION['uname'] ?> -->
+                  <i>
+                    <img src="https://ui-avatars.com/api/?background=328f8a&size=38&color=fff&name=<?php echo $_SESSION['uname']; ?>" class="img-fluid" alt="Profile Image" style="border-radius: 30px;">
+                  </i>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="./adminDashboard.php">Dashboard</a>
@@ -39,7 +45,10 @@
               ?>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <?php echo $_SESSION['uname'] ?>
+                  <!-- <?php echo $_SESSION['uname'] ?> -->
+                  <i>
+                    <img src="https://ui-avatars.com/api/?background=328f8a&size=38&color=fff&name=<?php echo $_SESSION['uname']; ?>" class="img-fluid" alt="Profile Image" style="border-radius: 30px;">
+                  </i>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="./userDashboard.php">Dashboard</a>
@@ -57,7 +66,7 @@
             {
             ?>
               <li class="nav-item">
-                <a class="nav-link btn font-weight-bold back text-white px-3" href="./logout.php">Logout</a>
+                <a class="nav-link btn font-weight-bold back text-white px-3 mt-1" href="./logout.php">Logout</a>
               </li>
             <?php
             }

@@ -19,10 +19,15 @@ if(!isset($_SESSION['urole']))
 <?php include "./navbar.php"; ?>
 
 <div class="container my-3 py-3">
-  <h2 class="text-center mt-3 mb-5"><?php echo $_SESSION['uname']; ?>'s Profile</h2>
+  <h2 class="text-center mt-3 mb-5">  
+    <?php echo $_SESSION['uname']; ?>'s Profile
+  </h2>
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-      <img src="https://ui-avatars.com/api/?background=0D8ABC&size=170&color=fff&name=<?php echo $_SESSION['uname']; ?>" class="img-fluid" alt="Profile Image" style="border-radius: 30px;">
+      <img  style="height: 200px; width:200px; border:none;" 
+            src="https://joeschmoe.io/api/v1/<?php echo $_SESSION['uname']; ?>" 
+            class="img-thumbnail" alt="..."
+      />
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 text-left">
       <div class="form-group">
@@ -36,6 +41,12 @@ if(!isset($_SESSION['urole']))
       <div class="form-group">
         <small id="emailHelp" class="form-text text-muted">Role</small>
         <label for="exampleInputEmail1"><?php echo $_SESSION['urole']==1?"Admin":"User";  ?></label>
+      </div>
+      <div class="form-group">
+        <small id="emailHelp" class="form-text text-muted">Status</small>
+        <label for="exampleInputEmail1" class="<?php echo $_SESSION['ublock']==1?"text-danger":"text-success" ?> font-weight-bold">
+          <?php echo $_SESSION['ublock']==1?"Blocked":"Active" ?>
+        </label>
       </div>
     </div>
   </div>
