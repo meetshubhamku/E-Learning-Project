@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
   <?php include "./head.php" ?>
-  <body class="back" onload="hideLoader();">
+  <body class="" onload="hideLoader();">
     <!-- Loader -->
     <?php include "./loader.php"; ?>
 
@@ -13,27 +13,32 @@ session_start();
     <!-- Navbar End -->
 
     <!-- Title -->
-    <div class="container my-5 ">
-      <div class="row">
-        <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-white d-flex flex-column justify-content-center">
-          <div>
-            <h6 style="font-size: 2rem;">Online Learning</h6>
-            <h1 style="font-size: 4rem;" class="mb-4">Learn <strong class="text-dark">Everyday</strong></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consectetur? Perspiciatis delectus, facilis quidem doloribus culpa explicabo repellendus, quaerat ullam quod provident suscipit necessitatibus nihil voluptas doloremque mollitia dolorum quas.</p>
+    <div class="container-fluid verticalBack">
+      <div class="container py-5 ">
+        <div class="row">
+          <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-dark d-flex flex-column justify-content-center">
             <div>
-              <a class="btn btn-dark py-2 pl-5 pr-5 font-weight-bold" href="./registration.php">Get Started</a>
+              <h6 style="font-size: 2rem;">Online Learning</h6>
+              <h1 style="font-size: 4rem;" class="mb-4 ">Learn <strong class="text-success">Everyday</strong></h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consectetur? Perspiciatis delectus, facilis quidem doloribus culpa explicabo repellendus, quaerat ullam quod provident suscipit necessitatibus nihil voluptas doloremque mollitia dolorum quas.</p>
+              <div>
+                <a class="btn btn-success py-2 pl-5 pr-5 font-weight-bold" href="./registration.php">Get Started</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-white">
-          <img src="./assets/home.png" class="img-fluid" alt="Responsive image">
+          <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-white">
+            <img src="./assets/home.png" class="img-fluid" alt="Responsive image">
+          </div>
         </div>
       </div>
     </div>
     <!-- Title Ends-->
 
 
-    <div class="container-fluid py-5 " style="background-color: #ECF0F1;">
+    
+
+
+    <div class="container-fluid py-5 crossBack" style="background-color: #ECF0F1;">
       <div class="container">
         <div class="row">
           <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-white order-1">
@@ -41,10 +46,10 @@ session_start();
           </div>
           <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-dark order-sm-1 d-flex flex-column justify-content-center">
             <h6 style="font-size: 2rem;">Get access to high quality learning!</h6>
-            <h1 style="font-size: 4rem;" class="mb-4">Join Online Courses <strong class="text-dark">Today</strong></h1>
+            <h1 style="font-size: 4rem;" class="mb-4">Join Online Courses <strong class="text-success">Today</strong></h1>
             <p>Etiam velit purus, vehicula quis imperdiet dignissim, convallis vitae nisl. Nullam facilisi. Pellentesque non pulvinar justo. Nullam eget neque ut tellus ornare ullamcorper ulla ambco mattis for nulla glavrida egesed!</p>
             <div>
-              <a class="btn btn-dark py-2 pl-5 pr-5 font-weight-bold" href="#">READ MORE</a>
+              <a class="btn btn-outline-success py-2 pl-5 pr-5 font-weight-bold" href="#">READ MORE</a>
             </div>
           </div>
         </div>  
@@ -115,6 +120,9 @@ session_start();
         </div>
       </div>
     </div>
+
+
+    
 
     <?php include "./footer.php"; ?>
   </body>

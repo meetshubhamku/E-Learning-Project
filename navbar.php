@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5 pr-5 font-weight-bold">
-      <a class="navbar-brand" href="./index.php" style="font-family: Gabriola; font-size:2.2rem;">
-        <i class="mr-2"><img src="https://img.icons8.com/material/50/000000/machine-learning.png"/></i>
+      <a class="navbar-brand" href="./index.php" style="font-family: Gabriola; font-size:2.2rem; color:#328f8a;">
+        <i class="mr-2"><img src="https://img.icons8.com/material/50/328f8a/machine-learning.png"/></i>
         LearnCog
       </a>
       <button

@@ -28,5 +28,8 @@
         element.style.display="none";
       }
     </script>
-    <title>E-Learning</title>
+    
+    <title> 
+      LearnCog
+    </title>
   </head>

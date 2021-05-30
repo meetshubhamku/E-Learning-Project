@@ -6,7 +6,7 @@
   <?php include "./loader.php"; ?>
 
   <?php include "./navbar.php"; ?>
-  <div class="container py-5">
+  <div class="container py-5" >
     <div class="row">
       <div class="col-lg-5 col-md-5 col-sm-10 mx-auto form-box">
         <form method="POST" action="./performLogin.php">
